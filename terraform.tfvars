@@ -1,0 +1,13 @@
+region            = "eu-west-1"
+bucket_name       = "terraformbucket116" # Ensure this bucket name is globally unique
+db_name           = "terraformdb"
+db_username       = "testuser"
+db_password       = "Deeplight123"                # Use a strong password
+db_instance_class = "db.t3.micro"
+instance_type     = "t2.micro"
+key_name          = "testkeypair"                # Your EC2 key pair name
+ssh_key_path      = "/path/to/your/key.pem"  # Replace with the path to your SSH private key
+script_name       = "write_to_s3_and_postgres.py"  # The name of the script you want to run
+ec2_public_ip     = "" 
+local_script_path = "./scripts/write_to_s3_and_postgres.py"
+account_id        = "value"
